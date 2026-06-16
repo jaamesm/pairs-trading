@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pairs-trading"
+version = "0.1.0"
+description = "Statistical arbitrage pairs trading backtester with OU process modelling and walk-forward validation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    "yfinance>=0.2.36",
+    "pandas>=2.0.0",
+    "numpy>=1.26.0",
+    "scipy>=1.11.0",
+    "statsmodels>=0.14.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pairs_trading*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=pairs_trading --cov-report=term-missing --cov-report=xml --cov-fail-under=95"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
