@@ -10,13 +10,11 @@ matplotlib.use("Agg")
 
 import numpy as np
 import pandas as pd
-import pytest
 import matplotlib.pyplot as plt
 
 from pairs_trading.backtest.engine import BacktestConfig, BacktestResult
-from pairs_trading.metrics.performance import compute_drawdown_series
 from pairs_trading.models.ou_process import OUParameters
-from pairs_trading.signals.zscore import SignalConfig, SignalSeries, generate_signals
+from pairs_trading.signals.zscore import SignalConfig, generate_signals
 from pairs_trading.validation.walk_forward import WalkForwardFold, WalkForwardResult
 from pairs_trading.metrics.performance import PerformanceMetrics
 from pairs_trading.visualisation.plots import (

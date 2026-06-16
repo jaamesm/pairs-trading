@@ -37,10 +37,8 @@ to account for multiple testing: the effective significance threshold is
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-from typing import Callable, Optional
+from dataclasses import dataclass
 
-import numpy as np
 import pandas as pd
 
 from pairs_trading.backtest.engine import BacktestConfig, BacktestResult, run_backtest

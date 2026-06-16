@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from pairs_trading.backtest.engine import BacktestConfig, BacktestResult, run_backtest
+from pairs_trading.backtest.engine import BacktestConfig, run_backtest
 from pairs_trading.signals.zscore import SignalConfig, SignalSeries, generate_signals
 
 

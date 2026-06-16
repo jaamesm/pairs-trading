@@ -7,8 +7,7 @@ We test the validation logic, alignment, and error handling.
 
 from __future__ import annotations
 
-from datetime import date
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd

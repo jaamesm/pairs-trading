@@ -35,11 +35,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Literal
 
-import numpy as np
 import pandas as pd
 from statsmodels.regression.linear_model import OLS
 from statsmodels.tools import add_constant
-from statsmodels.tsa.stattools import adfuller, coint
+from statsmodels.tsa.stattools import coint
 
 
 @dataclass

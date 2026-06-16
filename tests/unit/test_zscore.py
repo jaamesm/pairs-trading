@@ -12,7 +12,6 @@ Key invariants tested
 
 import numpy as np
 import pandas as pd
-import pytest
 
 from pairs_trading.signals.zscore import (
     SignalConfig,

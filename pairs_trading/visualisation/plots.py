@@ -21,7 +21,6 @@ from typing import Optional
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-import numpy as np
 import pandas as pd
 
 from pairs_trading.backtest.engine import BacktestResult
