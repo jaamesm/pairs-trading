@@ -116,8 +116,6 @@ class TestFetchMultiplePairs:
     """Test the batch fetch function."""
 
     def test_returns_dict_keyed_by_tuples(self):
-        tickers_a = ["SPY", "GLD"]
-        tickers_b = ["QQQ", "GDX"]
 
         def mock_download(tickers, **kwargs):
             t = list(tickers)

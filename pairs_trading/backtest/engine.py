@@ -149,7 +149,6 @@ def run_backtest(
     total_costs = 0.0
 
     trade_records: list[dict] = []
-    open_trade_date: pd.Timestamp | None = None
     open_trade_pos: int = 0
 
     # Pre-compute position changes (trades)
